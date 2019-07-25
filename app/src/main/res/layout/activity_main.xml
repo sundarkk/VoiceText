@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voice to Text"
+        android:id="@+id/btn_voice"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/voice_black_24dp"
+        android:background="@drawable/gradient"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_share"
+        android:padding="30dp"
+
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        android:drawableLeft="@drawable/unit_black_24dp"
+        android:textColor="#FF4081"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toBottomOf="@+id/btn_speak"
+        android:text="Share"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_data"
+        android:lines="5"
+        android:textColor="#FF3D00"
+
+        app:layout_constraintTop_toBottomOf="@+id/btn_voice"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Message"
+        android:padding="30sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_data"
+        android:id="@+id/et_msg"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak Out"
+        android:drawableLeft="@drawable/ic_speaker_black_24dp"
+        android:background="@drawable/shadow"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="#FF1744"
+        app:layout_constraintTop_toBottomOf="@+id/et_msg"
+        android:id="@+id/btn_speak"/>
+</android.support.constraint.ConstraintLayout>
